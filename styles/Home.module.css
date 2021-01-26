@@ -8,12 +8,9 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 1000px;
+  height: 600px;
 }
 
 .footer {
@@ -119,4 +116,75 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.marker {
+  background-color: red;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  color: #eaeaea;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.statistics {
+  width: 200px;
+  font-size: 12px;
+}
+
+.statistics header {
+  display: flex;
+  align-items: center;
+}
+
+.statistics header > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.statistics header > span {
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 8px;
+}
+
+.world-statistics {
+  position: fixed;
+  left: 34%;
+  bottom: 20px;
+}
+
+.world-statistics > table, .world-statistics > table td {
+  border: solid 1px;
+  border-collapse: collapse;
+}
+
+.world-statistics-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.world-statistics-content .main-data {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.world-statistics-content .main-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ff0404;
+  margin-bottom: 10px;
+}
+
+.world-statistics-content .second-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0000ff;
+  margin-bottom: 10px;
 }
